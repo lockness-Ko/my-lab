@@ -9,7 +9,7 @@ cp ./.tmux_wlan.sh ~/.tmux_wlan.sh
 cp ./.tmux_openvpn.sh ~/.tmux_openvpn.sh
 cp ./.zshrc ~/.zshrc
 
-mkdir ~{,/tools}
+mkdir ~/tools
 
 cp ./tools/block_ssh.sh ~/tools/block_ssh.sh
 cp ./tools/storage.sh ~/tools/storage.sh
