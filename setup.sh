@@ -17,8 +17,10 @@ cd ./tools/nmaper.sh ~/tools/utitlity/
 
 sudo usermod --shell /usr/bin/zsh `whoami`
 
-echo "REBOOTING IN 10 SECONDS!"
-echo ""
-echo "PRESS Ctrl+C TO STOP"
-sleep 10
-sudo reboot
+cd ~
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone https://github.com/zsh-users/zsh-autosuggestions.git
+
+echo "Done :)"
+
+zsh
