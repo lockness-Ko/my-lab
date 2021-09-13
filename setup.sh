@@ -3,8 +3,8 @@ sudo apt install tmux; sudo apt install zsh; sudo apt install exa; sudo apt inst
 
 # Setup tmux
 cp ./.tmux.conf ~/.tmux.conf
-cp ./.tmux_status ~/.tmux_status
-cp ./.tmux_right ~/.tmux_right
+cp ./.tmux_status.sh ~/.tmux_status
+cp ./.tmux_right.sh ~/.tmux_right
 cp ./.tmux_wlan.sh ~/.tmux_wlan.sh
 cp ./.tmux_openvpn.sh ~/.tmux_openvpn.sh
 cp ./.zshrc ~/.zshrc
