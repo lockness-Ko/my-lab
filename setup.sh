@@ -9,18 +9,17 @@ cp ./.tmux_wlan.sh ~/.tmux_wlan.sh
 cp ./.tmux_openvpn.sh ~/.tmux_openvpn.sh
 cp ./.zshrc ~/.zshrc
 
-mkdir ~/tools{,/utilities}
+mkdir ~{,/tools}
 
-cp ./tools/block_ssh.sh ~/tools/utility/
-cp ./tools/storage.sh ~/tools/utility/
-cd ./tools/nmaper.sh ~/tools/utitlity/
+cp ./tools/block_ssh.sh ~/tools/block_ssh.sh
+cp ./tools/storage.sh ~/tools/storage.sh
+cp ./tools/nmaper.sh ~/tools/nmaper.sh
 
 sudo usermod --shell /usr/bin/zsh `whoami`
 
-cd ~
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 git clone https://github.com/zsh-users/zsh-autosuggestions.git
 
 echo "Done :)"
 
-zsh
+tmux
