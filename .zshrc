@@ -35,8 +35,8 @@ zstyle ':completion:*' verbose true
 
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
-source /home/lockness/Desktop/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /home/lockness/Desktop/tools/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/my-lab/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/my-lab/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 alias ls='exa'                                                          # ls
 alias l='exa -lbF --git'                                                # list, size, type, git
