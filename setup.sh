@@ -11,9 +11,9 @@ cp ./.zshrc ~/.zshrc
 
 mkdir ~/tools{,/utilities}
 
-cp ./tools/block_ssh.sh ~/tools/utilities/
-cp ./tools/storage.sh ~/tools/utilities/
-cd ./tools/nmaper.sh ~/tools/utitlities/
+cp ./tools/block_ssh.sh ~/tools/utility/
+cp ./tools/storage.sh ~/tools/utility/
+cd ./tools/nmaper.sh ~/tools/utitlity/
 
 sudo usermod --shell /usr/bin/zsh `whoami`
 
