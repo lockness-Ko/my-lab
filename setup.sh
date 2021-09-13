@@ -10,7 +10,7 @@ chmod +x ~/.tmux_right.sh
 cp ./.tmux_wlan.sh ~/.tmux_wlan.sh
 chmod +x ~/.tmux_wlan.sh
 cp ./.tmux_openvpn.sh ~/.tmux_openvpn.sh
-chmod +x ~/.tmux_openvpn
+chmod +x ~/.tmux_openvpn.sh
 cp ./.zshrc ~/.zshrc
 
 mkdir ~/tools
