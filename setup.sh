@@ -9,6 +9,12 @@ cp ./.tmux_wlan.sh ~/.tmux_wlan.sh
 cp ./.tmux_openvpn.sh ~/.tmux_openvpn.sh
 cp ./.zshrc ~/.zshrc
 
+mkdir ~/tools{,/utilities}
+
+cp ./tools/block_ssh.sh ~/tools/utilities/
+cp ./tools/storage.sh ~/tools/utilities/
+cd ./tools/nmaper.sh ~/tools/utitlities/
+
 sudo usermod --shell /usr/bin/zsh `whoami`
 
 echo "REBOOTING IN 10 SECONDS!"
