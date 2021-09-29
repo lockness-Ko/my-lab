@@ -10,9 +10,9 @@ setopt histignorealldups sharehistory
 bindkey -e
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-#HISTSIZE=1000
-#SAVEHIST=1000
-#HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
+HISTFILE=~/.zsh_history
 
 # Use modern completion system
 autoload -Uz compinit
@@ -39,5 +39,9 @@ source ~/my-lab/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/my-lab/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 autoload -U colors && colors
-prompt adam2
-prompt bart
+PROMPT=$'%F{%(#.blue.green)}┌──(%B%F{%(#.red.blue)}%n%(#.��.㉿)%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n└─%B%(#.%F{red}#.%F{blue}$)%b%F{reset} '
+
+bindkey '^[[1;5C' forward-word                    # ctrl + ->
+bindkey '^[[C' forward-word                       # ctrl + ->
+bindkey '^[[1;5D' backward-word                   # ctrl + <-
+bindkey '^[[D' backward-word                      # ctrl + <-
