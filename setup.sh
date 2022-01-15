@@ -1,5 +1,5 @@
 # Install tools
-sudo apt install tmux; sudo apt install zsh; sudo apt install exa; sudo apt install nmap; sudo apt install tree; sudo apt install cmatrix; sudo apt install ncat; sudo apt install sshpass; sudo apt install openvpn
+sudo apt install -y tmux zsh exa nmap cmatrix sshpass openvpn
 
 # Setup tmux
 mv ./.tmux.conf ~/.tmux.conf
