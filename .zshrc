@@ -6,6 +6,7 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _expand _complete _ignored _approximate
+zstyle :compinstall filename '/home/lockness/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -38,8 +39,8 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 autoload -U colors && colors
-PROMPT="%{$fg[black]%}%K{9}%n%{$reset_color%}%{$bg[red]%}%F{9}%{$fg[black]%}%d%{$fg[red]%}%{$bg[black]%}"$'\n'"%{$bg[red]%}%{$fg[black]%}>%{$reset_color%}%{$fg[red]%}% %{$reset_color%}"
-RPROMPT="%{$fg[black]%}%F{9}%{$fg[black]%}%K{9}%? | %t%{$reset_color%}"
+PROMPT="%{$fg[black]%}%K{9}%n%{$reset_color%}%{$bg[red]%}%F{9}%{$fg[black]%}%d%{$fg[red]%}%{$bg[black]%}"$'\n'"%{$bg[red]%}%{$fg[black]%}>%{$reset_color%}%{$fg[red]%}% %k%f"
+RPROMPT="%{$fg[black]%}%F{9}%{$fg[black]%}%K{9}%? | %t%k%f"
 # PROMPT=$'%F{%(#.blue.green)}┌──(%B%F{%(#.red.blue)}%n%(#.��.㉿)%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n└─%B%(#.%F{red}#.%F{blue}$)%b%F{reset} '
 
 bindkey '^[[1;5C' forward-word                    # ctrl + ->
